@@ -1,0 +1,48 @@
+ <div class="container">
+            <div class="row">
+                <header class="text-center">
+                    <h1 class="heading">ANGULAR MENTIONS</h1>
+                    <h6 class="text-muted">(Angular @mentions)</h6>
+                </header>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="form-group">
+                        <h3>Content Editable:</h3>
+                        <div 
+                      ce
+                        contenteditable
+ dn-data-placeholder="Try tagging someone or Try using abbreviation like ttul"
+                         mentio
+                        mentio-typed-term="typedTerm"
+                            mentio-macros="macros"
+                            class="editor form-control"
+                            id="htmlContent"
+                            ng-model="htmlContent"
+                           
+                            >
+                        </div>
+                        
+                    </div>
+
+                    <mentio-menu
+                                mentio-for="'htmlContent'"
+                                mentio-trigger-char="'@'"
+                                mentio-items="people"
+                                mentio-template-url="people-mentions.tpl"
+                                mentio-search="searchPeople(term)"
+                                mentio-select="getPeopleText(item)"
+                                ></mentio-menu>
+
+
+                  
+
+
+                   
+                </div>
+            </div>
+        </div>
+
+
+         
